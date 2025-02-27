@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>PetBnB - Hospedaje para Mascotas</title>
-        <!-- Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YS7CC1Z4V"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-9YS7CC1Z4V');
-            gtag('config', 'AW-16896794798');
-        </script>
-        <!-- Fin Google Analytics -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <title>PetBnB - Hospedaje para Mascotas</title>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YS7CC1Z4V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-9YS7CC1Z4V');
+        gtag('config', 'AW-16896794798');
+    </script>
+    <!-- Fin Google Analytics -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
@@ -34,10 +36,8 @@
                         <a class="nav-link" href="#precios">Precios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-primary ms-2" 
-                           href="https://forms.gle/ypAtHRMRVck2Sf2bA" 
-                           target="_blank"
-                           onclick="gtag('event', 'registro', {
+                        <a class="btn btn-primary ms-2" href="https://forms.gle/ypAtHRMRVck2Sf2bA" target="_blank"
+                            onclick="gtag('event', 'registro', {
                              'event_category': 'conversión',
                              'event_label': 'navbar_registro'
                            });">
@@ -56,18 +56,20 @@
                 <div class="col-lg-6">
                     <h1>Encuentra el cuidador perfecto para tu mascota</h1>
                     <p class="lead">Cuidadores verificados y amantes de los animales cerca de ti</p>
-                    <a href="https://forms.gle/ypAtHRMRVck2Sf2bA" 
-                       target="_blank" 
-                       class="btn btn-primary btn-lg"
-                       onclick="gtag('event', 'búsqueda', {
+                    <a href="https://forms.gle/ypAtHRMRVck2Sf2bA" target="_blank" class="btn btn-primary btn-lg"
+                        onclick="gtag('event', 'búsqueda', {
                          'event_category': 'conversión',
                          'event_label': 'hero_buscar_cuidadores'
-                       });">
+                       });
+                       gtag('event', 'conversion', {
+         'send_to': 'AW-16896794798/No0KCLvAuKMaEK7Bgvk-'
+       });">
                         Buscar cuidadores
                     </a>
                 </div>
                 <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=800" alt="Mascota feliz" class="img-fluid rounded shadow">
+                    <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=800"
+                        alt="Mascota feliz" class="img-fluid rounded shadow">
                 </div>
             </div>
         </div>
@@ -80,22 +82,26 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="feature-card">
-                        <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=400" alt="Verificación" class="feature-img">
+                        <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=400"
+                            alt="Verificación" class="feature-img">
                         <h3>Cuidadores Verificados</h3>
                         <p>Todos nuestros cuidadores pasan por un riguroso proceso de verificación</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-card">
-                        <img src="https://images.unsplash.com/photo-1628009368231-7bb7cf0a6250?auto=format&fit=crop&w=400" alt="Seguro" class="feature-img">
-                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=400" alt="Seguro" class="feature-img">
+                        <img src="https://images.unsplash.com/photo-1628009368231-7bb7cf0a6250?auto=format&fit=crop&w=400"
+                            alt="Seguro" class="feature-img">
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=400"
+                            alt="Seguro" class="feature-img">
                         <h3>Cobertura Veterinaria</h3>
                         <p>Tu mascota estará protegida durante toda su estadía</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-card">
-                        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=400" alt="Actualizaciones" class="feature-img">
+                        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=400"
+                            alt="Actualizaciones" class="feature-img">
                         <h3>Actualizaciones Diarias</h3>
                         <p>Recibe fotos y actualizaciones de tu mascota todos los días</p>
                     </div>
@@ -106,4 +112,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html> 
+
+</html>
